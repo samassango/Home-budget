@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homebudgetdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.massango.homebudgetdemo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.CreateActivity"
+            android:label="@string/title_activity_create" >
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.BudgetActivity"
+            android:label="@string/title_activity_budget"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.IncomeActivity"
+            android:label="@string/title_activity_income"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.BudgetListActivity"
+            android:label="@string/title_activity_budget_list"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.TransectionActivity"
+            android:label="@string/title_activity_transection" >
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.ExpenseActivity"
+            android:label="@string/title_activity_expense"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.CategoriesActivity"
+            android:label="@string/title_activity_categories"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.EditExpenseActivity"
+            android:label="@string/title_activity_edit_expense"
+            android:parentActivityName="com.massango.homebudgetdemo.CategoriesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.homebudgetdemo.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name="com.massango.homebudgetdemo.AddMonthlyItemActivity"
+            android:label="@string/title_activity_add_monthly_item"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.massango.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.homebudgetdemo.AddItemActivity"
+            android:label="@string/title_activity_add_item"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.massango.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.homebudgetdemo.CheckListActivity"
+            android:label="@string/title_activity_check_list"
+            android:parentActivityName="com.massango.homebudgetdemo.BudgetListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.massango.homebudgetdemo.BudgetListActivity" />
+        </activity>
+        <activity
+            android:name="com.example.homebudgetdemo.AddCatActivity"
+            android:label="@string/title_activity_add_cat"
+            android:parentActivityName="com.massango.homebudgetdemo.CategoriesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.massango.homebudgetdemo.CategoriesActivity" />
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name="com.example.homebudgetdemo.CalendarActivity"
+            android:label="@string/title_activity_calendar"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.massango.homebudgetdemo.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.homebudgetdemo.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.massango.homebudgetdemo.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.massango.homebudgetdemo.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

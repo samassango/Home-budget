@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateBudgetActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="vertical"
+            android:rowCount="16"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" >
+
+        </GridLayout>
+
+    </ScrollView>
+
+             <Button
+                 android:id="@+id/btnAddBudget"
+                 android:layout_width="134dp"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignRight="@+id/scrollView1"
+                 android:background="@android:color/holo_green_light"
+                 android:ems="10"
+                 android:text="Create" />
+
+             <Button
+                 android:id="@+id/btnCancel"
+                 android:layout_width="134dp"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/btnAddBudget"
+                 android:layout_alignBottom="@+id/btnAddBudget"
+                 android:layout_alignLeft="@+id/scrollView1"
+                 android:background="@android:color/holo_green_light"
+                 android:ems="10"
+                 android:text="Cancel" />
+<!--
+             <EditText
+                 android:id="@+id/txtDescription"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/btnAddBudget"
+                 android:layout_alignLeft="@+id/btnCancel"
+                 android:layout_marginBottom="98dp"
+                 android:ems="10"
+                 android:inputType="textMultiLine" >
+
+                 <requestFocus />
+             </EditText>
+
+             <TextView
+                 android:id="@+id/Description"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/txtDescription"
+                 android:layout_alignLeft="@+id/txtDescription"
+                 android:text="Budget Description:"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+-->
+
+             <EditText
+                 android:id="@+id/txtBudgetName"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/btnCancel"
+                 android:layout_centerVertical="true"
+                 android:ems="10"
+                 android:hint=" Enter budget name" />
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/txtBudgetName"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignRight="@+id/txtBudgetName"
+                 android:layout_below="@+id/scrollView1"
+                 android:layout_marginBottom="18dp"
+                 android:src="@drawable/transaction_list" />
+            
+</RelativeLayout>
